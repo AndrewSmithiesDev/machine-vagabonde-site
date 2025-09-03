@@ -1,57 +1,233 @@
 <!DOCTYPE html>
 <html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Machine Vagabonde</title>
-    <link rel="stylesheet" href="css/style.min.css">
-    <link rel="shortcut icon" href="/images/favicon_io/favicon-32x32.png" type="image/x-icon">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
-</head>
-<body>
+    <link rel="stylesheet" href="css/style.min.css" />
+    <link
+      rel="shortcut icon"
+      href="/images/favicon_io/favicon-32x32.png"
+      type="image/x-icon"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"
+    />
+  </head>
+  <body>
     <!-- NAVBAR -->
     <nav class="navbar navbar-dark primary-opacity75 navbar-expand-lg">
-        <div class="container">
-          <a class="navbar-brand" href="#"><img class="img-fluid" src="/images/Logos/text-white.png" alt=""></a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav ms-auto">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Accueil</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Débarrassage</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Brocante</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Surcyclage</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Contact</a>
-              </li>
-            </ul>
+      <div class="container">
+        <a class="navbar-brand" href="#"
+          ><img class="img-fluid" src="/images/Logos/text-white.png" alt=""
+        /></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a
+                class="nav-link active"
+                id="link-red"
+                aria-current="page"
+                href="#"
+                >Accueil</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Débarrassage</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Brocante</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Surcyclage</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- HERO -->
+    <div id="hero" class="text-primary mt-3">
+      <div
+        class="container d-flex flex-column justify-content-center align-items-center text-center"
+      >
+        <div
+          id="hero-img-title"
+          class="d-flex align-items-center justify-content-center"
+        >
+          <img src="/images/Logos/bird.png" alt="" class="img-fluid" />
+          <div id="hero-title" class="text-center w-auto d-flex flex-column">
+            <h1 class="architect fw-bold mb-0 mt-5">MACHINE</h1>
+            <h1 class="brush-script-italic">Vagabonde</h1>
           </div>
         </div>
-      </nav>
+        <h2 class="poppins-bold my-4">
+          Débarrasser, récupérer, transformer et redonner vie à des objets de
+          seconde main.
+        </h2>
+        <h2 class="poppins-regular mb-4">
+          Entre recyclage, dons solidaires et créations surcyclées, notre
+          activité consiste à valoriser les encombrants comme une ressource
+          locale, joyeusement bricolée et pleine d'histoires solidaires
+          porteuses de sens.
+        </h2>
+      </div>
+    </div>
 
-      <!-- HERO -->
-       <div id="hero" class="text-primary mt-3">
-        <div class="container d-flex flex-column justify-content-center align-items-center">
-            <div id="hero-img-title" class="d-flex align-items-center justify-content-center">
-                <img src="/images/Logos/bird.png" alt="" class="img-fluid">
-                <div id="hero-title" class="text-center w-auto d-flex flex-column">
-                    <h1 class="architect fw-bold mb-0 mt-5">MACHINE</h1>
-                    <h1 class="brush-script-italic">Vagabonde</h1>
-                </div>
-            </div>
+    <!-- SERVICES -->
+    <div id="services" class="bg-primary text-white">
+      <div class="container d-flex flex-column justify-content-center py-4">
+        <div
+          id="debarrassage"
+          class="services-content d-flex flex-column-reverse flex-md-row my-4 gap-md-4"
+        >
+          <div class="services-images text-center w-100">
+            <img
+              src="./images/Débarrassage/Débarrassage-Combrailles-2.jpg"
+              alt=""
+              class="img-fluid"
+            />
+            <img
+              src="./images/Débarrassage/Débarrassage-Fontanil.jpg"
+              alt=""
+              class="img-fluid"
+            />
+          </div>
+          <div
+            class="services-text text-center d-flex flex-column justify-content-center align-items-center"
+          >
+            <h2 class="poppins-bold">Débarrassage</h2>
+            <p class="my-4 poppins-regular">
+              Intervention directement chez les particuliers, dans les caves,
+              greniers, appartements ou lieux d’activité pour collecter ce qui
+              est jugé inutile, encombrant ou usé.
+            </p>
+            <p class="poppings-regular fw-light">
+              Ici, le déchet devient potentiellement ressource dès le premier
+              regard.
+            </p>
+            <a
+              name=""
+              id=""
+              class="btn btn-light text-primary my-4"
+              href="#"
+              role="button"
+              >Découvrir le service</a
+            >
+          </div>
         </div>
-       </div>
+        <hr class="text-secondary" />
 
+        <div
+          id="brocante"
+          class="services-content d-flex flex-column flex-md-row my-4 gap-md-4"
+        >
+          <div
+            class="services-text text-center d-flex flex-column justify-content-center align-items-center"
+          >
+            <h2 class="poppins-bold">Broconte</h2>
+            <p class="mt-4 poppins-regular">
+              Après tri, nettoyage et petites réparations, une grande partie des
+              objets récupérés est remise en circulation à travers des brocantes
+              organisées en ligne ou sur place.
+            </p>
+            <p class="poppings-regular">
+              Tous les objets sont proposés à <strong>prix libre</strong>, pour
+              favoriser l’accessibilité, éviter le gaspillage et encourager les
+              circuits courts.
+            </p>
+            <p class="poppings-regular my-4 fw-light">
+              Donner, c’est déjà recycler ; transmettre, c’est prolonger
+              l’histoire des objets.
+            </p>
+            <a
+              name=""
+              id=""
+              class="btn btn-secondary text-primary my-4"
+              href="#"
+              role="button"
+              >Découvrir le service</a
+            >
+          </div>
+          <div class="services-images text-center w-100">
+            <img
+              src="./images/Brocante/borcante-1.webp"
+              alt=""
+              class="img-fluid"
+            />
+            <img
+              src="./images/Brocante/borcante-2.webp"
+              alt=""
+              class="img-fluid"
+            />
+          </div>
+        </div>
 
-      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
-</body>
+        <hr class="text-secondary" />
+
+        <div
+          id="surcyclage"
+          class="services-content d-flex flex-column-reverse flex-md-row my-4 gap-md-4"
+        >
+          <div class="services-images text-center w-100">
+            <img
+              src="./images/Surcyclage/Meuble-bar-2.jpg"
+              alt=""
+              class="img-fluid"
+            />
+            <img
+              src="./images/Surcyclage/Meuble-bar-7.jpg"
+              alt=""
+              class="img-fluid"
+            />
+          </div>
+          <div
+            class="services-text text-center d-flex flex-column justify-content-center align-items-center"
+          >
+            <h2 class="poppins-bold">Surcyclage</h2>
+            <p class="my-4 poppins-regular">
+              Quand un objet ne peut plus être utilisé tel quel, il devient
+              matière à créer. Le surcyclage, ou upcycling, consiste à
+              transformer ces matériaux — bois, métal, pièces détachées, chutes
+              — en créations uniques : meubles revisités, objets hybrides,
+              aménagements sur mesure…
+            </p>
+            <p class="poppings-regular fw-light">
+              Ici, chaque vis, chaque planche a une histoire. Et chaque création
+              raconte un nouveau possible.
+            </p>
+            <a
+              name=""
+              id=""
+              class="btn btn-outline-light my-4"
+              href="#"
+              role="button"
+              >Découvrir le service</a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>
