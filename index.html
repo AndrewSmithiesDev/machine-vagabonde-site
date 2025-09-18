@@ -14,12 +14,14 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"
     />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
   </head>
   <body>
     <!-- NAVBAR -->
     <nav class="navbar navbar-dark primary-opacity75 navbar-expand-lg">
       <div class="container">
-        <a class="navbar-brand" href="#"
+        <a class="navbar-brand" href="index.html"
           ><img class="img-fluid" src="/images/Logos/text-white.png" alt=""
         /></a>
         <button
@@ -40,21 +42,21 @@
                 class="nav-link active"
                 id="link-red"
                 aria-current="page"
-                href="#"
+                href="index.html"
                 >Accueil</a
               >
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Débarrassage</a>
+              <a class="nav-link" href="debarrassage.html">Débarrassage</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Brocante</a>
+              <a class="nav-link" href="brocante.html">Brocante</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Surcyclage</a>
+              <a class="nav-link" href="surcyclage.html">Surcyclage</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Contact</a>
+              <a class="nav-link" href="contact.html">Contact</a>
             </li>
           </ul>
         </div>
@@ -66,7 +68,9 @@
       <div
         class="container d-flex flex-column justify-content-center align-items-center text-center"
       >
-        <div
+        <div data-aos="fade-up"
+        data-aos-duration="3000"
+        
           id="hero-img-title"
           class="d-flex align-items-center justify-content-center"
         >
@@ -96,7 +100,11 @@
           id="debarrassage"
           class="services-content d-flex flex-column-reverse flex-md-row my-4 gap-md-5"
         >
-          <div class="services-images text-center w-100">
+          <div 
+          data-aos="fade-right"
+          data-aos-duration="3000"
+          
+           class="services-images text-center w-100">
             <img
               src="./images/Débarrassage/Débarrassage-Combrailles-2.jpg"
               alt="Débarrassage-Combrailles-2"
@@ -109,6 +117,9 @@
             />
           </div>
           <div
+          data-aos="fade-left"
+          data-aos-duration="3000"
+          
             class="services-text text-center d-flex flex-column justify-content-center align-items-center"
           >
             <h3 class="poppins-bold">Débarrassage</h3>
@@ -125,7 +136,7 @@
               name=""
               id=""
               class="btn btn-light text-primary my-4"
-              href="#"
+              href="debarrassage.html"
               role="button"
               >Découvrir le service</a
             >
@@ -138,6 +149,9 @@
           class="services-content d-flex flex-column flex-md-row my-4 gap-md-5"
         >
           <div
+          data-aos="fade-right"
+          data-aos-duration="3000"
+          
             class="services-text text-center d-flex flex-column justify-content-center align-items-center"
           >
             <h3 class="poppins-bold">Broconte</h3>
@@ -159,12 +173,16 @@
               name=""
               id=""
               class="btn btn-secondary text-primary my-4"
-              href="#"
+              href="brocante.html"
               role="button"
               >Découvrir le service</a
             >
           </div>
-          <div class="services-images text-center w-100">
+          <div
+          data-aos="fade-left"
+          data-aos-duration="3000"
+           
+          class="services-images text-center w-100">
             <img
               src="./images/Brocante/borcante-1.webp"
               alt="borcante-1"
@@ -184,7 +202,11 @@
           id="surcyclage"
           class="services-content d-flex flex-column-reverse flex-md-row my-4 gap-md-5"
         >
-          <div class="services-images text-center w-100">
+          <div
+          data-aos="fade-right"
+          data-aos-duration="3000"
+            
+          class="services-images text-center w-100">
             <img
               src="./images/Surcyclage/Meuble-bar-2.jpg"
               alt="Meuble-bar-2"
@@ -197,6 +219,9 @@
             />
           </div>
           <div
+          data-aos="fade-left"
+          data-aos-duration="3000"
+           
             class="services-text text-center d-flex flex-column justify-content-center align-items-center"
           >
             <h3 class="poppins-bold">Surcyclage</h3>
@@ -215,7 +240,7 @@
               name=""
               id=""
               class="btn btn-outline-light my-4"
-              href="#"
+              href="surcyclage.html"
               role="button"
               >Découvrir le service</a
             >
@@ -409,13 +434,13 @@
       <div class="col-md-5">
         <div class="row">
           <div class="col-6 d-flex flex-column gap-3">
-            <a href="" class="text-white text-decoration-none">Acceuil</a>
+            <a href="index.html" class="text-white text-decoration-none">Acceuil</a>
             <a href="" class="text-white text-decoration-none">Débarrassage</a>
-            <a href="" class="text-white text-decoration-none">Brocante</a>
+            <a href="debarrassage.html" class="text-white text-decoration-none">Brocante</a>
           </div>
           <div class="col-6 d-flex flex-column gap-3">
-            <a href="" class="text-white text-decoration-none">Surcyclage</a>
-            <a href="" class="text-white text-decoration-none">Contact</a>
+            <a href="surcyclage.html" class="text-white text-decoration-none">Surcyclage</a>
+            <a href="contact.html" class="text-white text-decoration-none">Contact</a>
           </div>
         </div>
       </div>
@@ -439,6 +464,15 @@
       integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
       crossorigin="anonymous"
     ></script>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <script>
+      AOS.init({
+        once: true,
+        easing: 'ease-in-out'
+      });
+    </script>
     
   </body>
 </html>
